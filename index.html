@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:420,500,800" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      padding: 0;
+    }
+    .carousel-item {
+      height: 32rem;
+      position: relative;
+      background-color: center;
+      background-size: cover;
+      background-color: black;
+      color: white;
+    }
+    .container {
+      position: absolute;
+      bottom:0;
+      left: 0;
+      right: 0;
+      padding-bottom: 50px;
+    }
+
+    .container1 {
+      position: relative;
+      left: 0;
+      right: 0;
+      padding-bottom: 50px;
+    }
+    .container2 {
+      position: relative;
+      left: 0;
+      right: 0;
+      width: 99%;
+      padding-bottom: 50px;
+    }
+
+    .overlay-image {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      background-color: center;
+      background-size: cover;
+      opacity: 0.5;
+
+    }
+    
+    #daterows {
+      padding: 8px;
+    }
+
+    .datepicker {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2%;
+    }
+
+    .imginformations {
+      margin-bottom: 1.5em;
+    }
+
+    .imgdestinations {
+      margin-bottom: 1.5em;
+      border-radius: 10px;
+    }
+
+    #destinations {
+      color: #163235;
+    }
+
+    .littledetailsleft {
+      float: left;
+      padding-left: 7%;
+    }
+
+    .littledetailsright {
+      float: right;
+      padding-right: 7%;
+    }
+
+    .clientdetails {
+      float: left;
+      padding-left: 7%;
+    }
+
+    #client {
+      float: left;
+    }
+
+    #clients {
+      padding-left: 1%;
+      padding-right: 1%;
+    }
+
+  </style>
+    <title>Progetto</title>
+</head>
+<body>
+
+    <!-------------------------------- NAVBAR ------------------------------------>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+          <img
+            src="img/earth_planet_globe_environement_world_icon_191963.png"
+            height="35"
+            width = "35"
+            alt="Blog logo"
+            loading="lazy"
+          />
+        </a>
+        <a id="proto" class="navbar-brand" href="#">Proto</a>
+        <!-- Left links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Places</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Careers</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a> 
+          </li>
+        </ul>
+      </div>
+        <div class="dropdown">
+            <button onclick="location.href='login.html'" type="button" id= 'bottonenav' class = "btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+<!-------------------------------------------------- NAVBAR --------------------------------------------------->
+
+<!-------------------------------------------------- CAROUSEL ------------------------------------------------->
+
+<div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+    <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="3000">
+      <div class="overlay-image" style="background-image:url(img/Img2.jpg);"></div>
+      <div class="container">
+        <h1>TRAVEL TO EXPLORE</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati sequi mollitia aperiam neque facilis magni sit enim maiores, nostrum vero delectus! Voluptate totam maiores quis amet enim expedita. Veritatis, commodi!
+        </p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <div class="overlay-image" style="background-image:url(img/Img1.jpg);"></div>
+      <div class="container">
+        <h1>TRAVEL TO EXPLORE</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati sequi mollitia aperiam neque facilis magni sit enim maiores, nostrum vero delectus! Voluptate totam maiores quis amet enim expedita. Veritatis, commodi!
+        </p>
+      </div>
+  </div>
+
+  <div class="carousel-item" data-bs-interval="3000">
+    <div class="overlay-image" style="background-image:url(img/Img3.jpg);"></div>
+    <div class="container">
+      <h1>TRAVEL TO EXPLORE</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati sequi mollitia aperiam neque facilis magni sit enim maiores, nostrum vero delectus! Voluptate totam maiores quis amet enim expedita. Veritatis, commodi!
+      </p>
+    </div>
+</div>
+</div>
+
+<a href="#myCarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+  <span class="sr-only">Previous</span>
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+</a>
+<a href="#myCarousel" class="carousel-control-next" role="button" data-bs-slide="next">
+  <span class="sr-only">Next</span>
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+</a>
+</div>
+
+<!-------------------------------------------------- CAROUSEL ------------------------------------------------->
+
+<!-------------------------------------------------- DATEPICKER ------------------------------------------------->
+
+<div class="container1 datepicker mt-100">
+  <div class="card">
+      <div class="row" id="daterows">
+          <div class="col-md-4"> <label>Check in</label> <input type="text" class="form-control" placeholder="Add date"></div>
+          <div class="col-md-4"> <label>Check out</label> <input type="text" class="form-control" placeholder="Add date"> </div>
+          <div class="col-md-4"> <label>Search</label> <button class="btn btn-primary pro-button w-100">Add a trip! <i class="fa fa-plane ml-2"></i></button></div>
+      </div>
+  </div>
+</div>
+
+<!-------------------------------------------------- DATEPICKER ------------------------------------------------->
+
+<!-------------------------------------------------- INFORMATIONS ----------------------------------------------->
+<div class="container2 shadow-lg p-3 mb-5 bg-white rounded">
+<div class="row">
+  <div id= "borderinformation " class="col-md">
+    <img class="imginformations" src="img/reward.png" height="35" width = "35" loading="lazy" alt="#">
+    <h3>Get Best Prices</h3>
+    <p>Pay through our application and save thousands and get amazing awards </p>
+  </div>
+  <div id= "borderinformation" class="col-md">
+    <img class="imginformations" src="img/Covidsafe.png" height="35" width = "35" loading="lazy" alt="#">
+    <h3>Covid Safe</h3>
+    <p>We have all the curated hotels that have all the precaution for a covid safe environment </p>
+  </div>
+  <div id= "borderinformation" class="col-md">
+    <img class="imginformations" src="img/payment.png" height="35" width = "35" loading="lazy" alt="#">
+    <h3>Flexible Payment</h3>
+    <p>Enjoy the flexible payment through our app and get rewars on every payment </p>
+  </div>
+  <div id= "borderinformation" class="col-md">
+    <img class="imginformations" src="img/place.png" height="35" width = "35" loading="lazy" alt="#">
+    <h3>Find The Best Near You</h3>
+    <p>Find the best hotels and places to visit near you in a single click</p>
+  </div>
+</div>
+</div>
+
+<!-------------------------------------------------- INFORMATIONS ----------------------------------------------->
+
+<!-------------------------------------------------- RECOMMENDED DESTINATIONS ------------------------------------>
+
+<div class="text-center">
+  <h3 id="destinations">Recommended destinations</h3><br><br><br>
+</div>
+
+<div class="container2 shadow-lg p-3 mb-5 bg-white rounded">
+  <div class="row">
+
+    <div id= "borderinformation" class="col-md-4">
+      <img class="imgdestinations" src="img/singapore,jpg.jpg" height="250" width = "420" loading="lazy" alt="#">
+      <h3>Singapore</h3>
+      <p>Singapore is a sovereign island country and city-state in maritime Southeast Asia.</p>
+        <div class="littledetailsleft">
+          <img class="imginformations" src="img/museum.png" height="25" width = "25" loading="lazy" alt="#">
+          <img class="imginformations" src="img/eat.png" height="25" width = "25" loading="lazy" alt="#">
+          <img class="imginformations" src="img/airplane.png" height="25" width = "25" loading="lazy" alt="#">
+          <p><strong>1000kms</strong></p>
+        </div>
+        <div class="littledetailsright">
+          <p>$10 000</p>
+          <p>Approx 2 night trip</p>
+        </div>
+    </div>
+    <div id= "borderinformation" class="col-md-4">
+      <img class="imgdestinations" src="img/thailand.jpg" height="250" width = "420" loading="lazy" alt="#">
+      <h3>Thailand</h3>
+      <p>Thailand, historically known as Siam and officially the Kingdom of Thailand, is a country in Southeast Asia.</p>
+      <div class="littledetailsleft">
+        <img class="imginformations" src="img/museum.png" height="25" width = "25" loading="lazy" alt="#">
+        <img class="imginformations" src="img/eat.png" height="25" width = "25" loading="lazy" alt="#">
+        <img class="imginformations" src="img/airplane.png" height="25" width = "25" loading="lazy" alt="#">
+        <p><strong>1000kms</strong></p>
+      </div>
+      <div class="littledetailsright">
+        <p>$10 000</p>
+        <p>Approx 2 night trip</p>
+      </div>
+    </div>
+    <div id= "borderinformation" class="col-md-4">
+      <img class="imgdestinations" src="img/paris.jpg" height="250" width = "420" loading="lazy" alt="#">
+      <h3>Paris</h3>
+      <p>Paris is the capital and most populous city of France, with an estimated population of 2,165,423 residents in 2019.</p>
+      <div class="littledetailsleft">
+        <img class="imginformations" src="img/museum.png" height="25" width = "25" loading="lazy" alt="#">
+        <img class="imginformations" src="img/eat.png" height="25" width = "25" loading="lazy" alt="#">
+        <img class="imginformations" src="img/airplane.png" height="25" width = "25" loading="lazy" alt="#">
+        <p><strong>1000kms</strong></p>
+      </div>
+      <div class="littledetailsright">
+        <p>$10 000</p>
+        <p>Approx 2 night trip</p>
+      </div>
+    </div>
+    <div id= "borderinformation" class="col-md-4">
+      <img class="imgdestinations" src="img/paris.jpg" height="250" width = "420" loading="lazy" alt="#">
+      <h3>Paris</h3>
+      <p>Paris is the capital and most populous city of France, with an estimated population of 2,165,423 residents in 2019.</p>
+      <div class="littledetailsleft">
+        <img class="imginformations" src="img/museum.png" height="25" width = "25" loading="lazy" alt="#">
+        <img class="imginformations" src="img/eat.png" height="25" width = "25" loading="lazy" alt="#">
+        <img class="imginformations" src="img/airplane.png" height="25" width = "25" loading="lazy" alt="#">
+        <p><strong>1000kms</strong></p>
+      </div>
+      <div class="littledetailsright">
+        <p>$10 000</p>
+        <p>Approx 2 night trip</p>
+      </div>
+    </div>
+    <div id= "borderinformation" class="col-md-4">
+      <img class="imgdestinations" src="img/paris.jpg" height="250" width = "420" loading="lazy" alt="#">
+      <h3>Paris</h3>
+      <p>Paris is the capital and most populous city of France, with an estimated population of 2,165,423 residents in 2019.</p>
+      <div class="littledetailsleft">
+        <img class="imginformations" src="img/museum.png" height="25" width = "25" loading="lazy" alt="#">
+        <img class="imginformations" src="img/eat.png" height="25" width = "25" loading="lazy" alt="#">
+        <img class="imginformations" src="img/airplane.png" height="25" width = "25" loading="lazy" alt="#">
+        <p><strong>1000kms</strong></p>
+      </div>
+      <div class="littledetailsright">
+        <p>$10 000</p>
+        <p>Approx 2 night trip</p>
+      </div>
+    </div>
+    <div id= "borderinformation" class="col-md-4">
+      <img class="imgdestinations" src="img/paris.jpg" height="250" width = "420" loading="lazy" alt="#">
+      <h3>Paris</h3>
+      <p>Paris is the capital and most populous city of France, with an estimated population of 2,165,423 residents in 2019.</p>
+      <div class="littledetailsleft">
+        <img class="imginformations" src="img/museum.png" height="25" width = "25" loading="lazy" alt="#">
+        <img class="imginformations" src="img/eat.png" height="25" width = "25" loading="lazy" alt="#">
+        <img class="imginformations" src="img/airplane.png" height="25" width = "25" loading="lazy" alt="#">
+        <p><strong>1000kms</strong></p>
+      </div>
+      <div class="littledetailsright">
+        <p id="km">$10 000</p>
+        <p>Approx 2 night trip</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!------------------------------------------------------- BLOGS ----------------------------------------->
+
+  <div class="text-center">
+    <h3 id="destinations">Blogs</h3><br><br><br>
+  </div>
+
+
+    <div class="container2 shadow-lg p-3 mb-5 bg-white rounded">
+      <div class="row">
+        <div id= "borderinformation" class="col-md-6">
+          <img class="imginformations" src="img/kilimanjaro.jpg" height="500" width = "800" loading="lazy" alt="#">
+          <h3>The Ultimate Guide to Climbing Mount Kilimanjaro</h3>
+        </div>
+     
+        <div id= "borderinformation" class="col-md-3">
+          <img class="imginformations" src="img/airplane.jpg" height="150" width = "300" loading="lazy" alt="#">
+          <h3>12 Things I'd Tell Any New Traveller</h3>
+        </div>
+
+        <div id= "borderinformation" class="col-md-3">
+          <img class="imginformations" src="img/tajmahal.jpg" height="150" width = "300" loading="lazy" alt="#">
+          <h3>The Ultimate Packing List For Women Travellers </h3>
+        </div>
+        </div>
+      </div>
+
+<!-------------------------------------------------- BLOGS ------------------------------------>
+
+<!-------------------------------------------------- CLIENTS ------------------------------------>
+
+<div class="text-center">
+  <h3 id="destinations">Clients</h3><br><br><br>
+</div>
+
+<div class="container2" id="clients">
+  <div class="row shadow-lg p-3 mb-5 bg-white rounded">
+    <div id= "borderinformation " class="col-sm">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus eos ad quas, est laudantium quidem labore eaque amet sapiente fugiat ab, optio at aliquid! Temporibus nisi accusamus minus sit ullam!</p>
+      <img class="imginformations" id = "client" src="img/client2.png" height="55" width = "55" loading="lazy" alt="#">
+      <div class="clientdetails">
+      <h4>Mario Rossi</h4>
+      <h6>Manager</6>
+    </div>
+    </div>
+
+    <div id= "borderinformation " class="col-sm">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus eos ad quas, est laudantium quidem labore eaque amet sapiente fugiat ab, optio at aliquid! Temporibus nisi accusamus minus sit ullam!</p>
+      <img class="imginformations" id = "client" src="img/client1.png" height="55" width = "55" loading="lazy" alt="#">
+      <div class="clientdetails">
+      <h4>Marta Verci</h4>
+      <h6>Developer</6>
+    </div>
+    </div>
+
+  </div>
+  </div>
+
+<!-------------------------------------------------- CLIENTS ------------------------------------>
+
+<!------------------------------------------------- FOOTER ---------------------------------------->
+
+
+
+<!------------------------------------------------- FOOTER ---------------------------------------->
+
+
+</body> 
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+</html>
