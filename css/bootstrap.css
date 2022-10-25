@@ -3072,6 +3072,183 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin:0;
+}
+
+.copyright {
+  float: left;
+}
+
+.fafaicon {
+  float: right;
+}
+
+#footer {
+  background-color: #C3D1F1;
+  padding:3%;
+}
+
+#a1 {
+  color: #163235;
+}
+
+.carousel-item {
+  height: 32rem;
+  position: relative;
+  background-color: center;
+  background-size: cover;
+  background-color: black;
+  color: white;
+}
+.container {
+  position: absolute;
+  bottom:0;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
+}
+
+.container1 {
+  position: relative;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
+}
+.container2 {
+  position: relative;
+  left: 0;
+  right: 0;
+  width: 99%;
+  padding-bottom: 50px;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: center;
+  background-size: cover;
+  opacity: 0.5;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.overlay-image-blog {
+  background-color: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+#daterows {
+  padding: 8px;
+}
+
+.datepicker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.imginformations {
+  margin-bottom: 1.5em;
+}
+
+.imgdestinations {
+  margin-bottom: 1.5em;
+  border-radius: 10px;
+}
+
+#destinations {
+  color: #163235;
+}
+
+.littledetailsleft {
+  float: left;
+  padding-left: 7%;
+}
+
+.littledetailsright {
+  float: right;
+  padding-right: 7%;
+}
+
+.clientdetails {
+  float: left;
+  padding-left: 7%;
+}
+
+#client {
+  float: left;
+}
+
+#clients {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.text {
+  position: absolute;
+  top: 20%;
+  text-transform: uppercase;
+  padding: 40px;
+  color: white;
+}
+
+.clientText {
+  letter-spacing: 1px;
+  padding-bottom: 6%;
+  padding-top: 3%;
+}
+
+.mytabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mytabs label {
+  padding: 25px; 
+  margin-left: 15%;
+  margin-bottom: 5%;
+}
+
+.mytabs input[type="radio"] {
+  display: none;
+}
+
+.mytabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+.mytabs .tab {
+  display: none;
+  
+  order: 1;
+}
+
+.mytabs input[type="radio"]:checked + label {
+  font-weight: bolder;
+  text-transform: uppercase;
+  color:#163235;
+  text-decoration: overline;
+  font-size:larger;
+}
+
+@media (max-width: 1300px) {
+.imgdestinations {
+max-width: 90%;
+height: auto;
+}
+}
+
+
 .btn-link {
   font-weight: 400;
   color: #007bff;
@@ -5893,8 +6070,6 @@ button.close {
 .carousel-inner {
   position: relative;
   width: 100%;
-  padding-left: 1.8em;
-  padding-right: 1.8em;
   text-align: center;
   overflow: hidden;
 }
